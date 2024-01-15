@@ -5,7 +5,10 @@ import './ui/global.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Appointr | Your appointment management system',
+  title: {
+    template : '%s | Appointr',
+    default: 'Appointr - A simple appointment system'
+  },
   description: 'A fullstack application for managing appointment',
 }
 
