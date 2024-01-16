@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "../button";
 
 export default function RegisterForm(){
     return (
@@ -17,7 +18,7 @@ export default function RegisterForm(){
                 <input type="password" id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="aueuyI$fdf" required></input>
             </div>
             
-            <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Login</button>
+            <Button>Register</Button>
             <p className="mt-2">Already have an account ? <Link className="text-blue-500" href="/login"> Login</Link></p>
     </form>
     )
